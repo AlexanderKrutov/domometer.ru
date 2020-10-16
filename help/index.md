@@ -5,7 +5,7 @@ topic: help
 ---
 
 <ol class="breadcrumb pull-right">
-  <li><a href="/">DomoMeter</a></li>
+  <li><a href="{{ '/' | absolute_url }}">DomoMeter</a></li>
   <li class="active">Справка</li>
 </ol>
 

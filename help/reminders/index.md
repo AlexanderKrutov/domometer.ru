@@ -7,8 +7,8 @@ video: reminders
 
 <div class="row">
 	<ol class="breadcrumb pull-right">
-	  <li><a href="/">DomoMeter</a></li>
-	  <li><a href="/help">Справка</a></li>
+      <li><a href="{{ '/' | absolute_url }}">DomoMeter</a></li>
+      <li><a href="{{ '/help' | absolute_url }}">Справка</a></li>
 	  <li class="active">Напоминания</li>
 	</ol>
 </div>

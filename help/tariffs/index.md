@@ -7,17 +7,18 @@ video: tariff
  
 <div class="row"> 
 <ol class="breadcrumb pull-right"> 
-  <li><a href="/">DomoMeter</a></li> 
-  <li><a href="/help">Справка</a></li> 
+  <li><a href="{{ '/' | absolute_url }}">DomoMeter</a></li>
+  <li><a href="{{ '/help' | absolute_url }}">Справка</a></li>
   <li class="active">Тарифы</li>
 </ol>
 </div> 
 
 <script type="text/javascript">
-	var screenshots = ['/assets/img/screens/tariff-amount.png', 
-	  '/assets/img/screens/tariff-history.png', 
-	  '/assets/img/screens/tariff-properties.png', 
-	  '/assets/img/screens/tariffs-list.png'
+	var screenshots = [
+	  '{{ "/assets/img/screens/tariff-amount.png" || absolute_url }}', 
+	  '{{ "/assets/img/screens/tariff-history.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/tariff-properties.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/tariffs-list.png" | absolute_url }}'
 	];
 </script>
 {% include _screenshot.md %}

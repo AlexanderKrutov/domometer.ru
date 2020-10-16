@@ -7,16 +7,16 @@ video: houses
 
 <div class="row">
 <ol class="breadcrumb pull-right">
-  <li><a href="/">DomoMeter</a></li>
-  <li><a href="/help">Справка</a></li>
+  <li><a href="{{ '/' | absolute_url }}">DomoMeter</a></li>
+  <li><a href="{{ '/help' | absolute_url }}">Справка</a></li>
   <li class="active">Квартиры</li>
 </ol>
 </div>
 
 <script type="text/javascript">
 	var screenshots = [
-	  '/assets/img/screens/houses.png', 
-	  '/assets/img/screens/house-properties.png'
+	  '{{ "/assets/img/screens/houses.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/house-properties.png" | absolute_url }}'
 	];
 </script>
 {% include _screenshot.md %}
