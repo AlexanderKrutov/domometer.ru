@@ -19,7 +19,7 @@ video: houses
 	  '/assets/img/screens/house-properties.png'
 	];
 </script>
-{% include_relative _screenshot.md %}
+{% include _screenshot.md %}
 
 <div class="instruction" markdown="1">
 

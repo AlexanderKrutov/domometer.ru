@@ -13,7 +13,7 @@ video: main-screen
 </ol>
 </div>
 
-{% include_relative _video.md %}
+{% include _video.md %}
 
 <div class="instruction" markdown="1">
 

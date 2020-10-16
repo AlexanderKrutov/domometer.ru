@@ -2,8 +2,8 @@
 	<div class="device-mockup nexus6 portrait device-help">
 		<div class="device">
 			<div class="screen help">
-				<video class="help" style="width:100%; height:100%" poster="/assets/img/screens/{{page.video}}.png">
-					<source src="/assets/videos/{{page.video}}.mp4" type="video/mp4">Ваш браузер не поддерживает это видео.
+				<video class="help" style="width:100%; height:100%" poster="{{ '/assets/img/screens/' | absolute_url }}{{page.video}}.png">
+					<source src="{{ '/assets/videos/' | absolute_url }}{{page.video}}.mp4" type="video/mp4">Ваш браузер не поддерживает это видео.
 				</video>
 				<div class="playpause"></div>
 			</div>

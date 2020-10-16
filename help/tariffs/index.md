@@ -20,7 +20,7 @@ video: tariff
 	  '/assets/img/screens/tariffs-list.png'
 	];
 </script>
-{% include_relative _screenshot.md %}
+{% include _screenshot.md %}
  
 <div class="instruction" markdown="1"> 
  

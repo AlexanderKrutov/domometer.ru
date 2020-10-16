@@ -20,7 +20,7 @@ video: bills
 	  '{{ "/assets/img/screens/bill-details.png" | absolute_url }}'
 	];
 </script>
-{% include_relative _screenshot.md %}
+{% include _screenshot.md %}
 
 <div class="instruction" markdown="1">
 

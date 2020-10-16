@@ -19,7 +19,7 @@ video: counters
 	  '{{ "/assets/img/screens/counter-properties.png" | absolute_url }}'
 	];
 </script>
-{% include_relative _screenshot.md %} 
+{% include _screenshot.md %} 
   
 <div class="instruction" markdown="1"> 
  

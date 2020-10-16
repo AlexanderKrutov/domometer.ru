@@ -17,7 +17,7 @@ topic: help
 	  '%theme_url%/img/screens/saures.png', 
 	];
 </script>
-{% include_relative _screenshot.md %} 
+{% include _screenshot.md %} 
 
 <div class="instruction" markdown="1">
 
