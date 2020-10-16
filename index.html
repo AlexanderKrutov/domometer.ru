@@ -139,17 +139,18 @@ is_front_page: true
    correctRatio: false, 
    shuffle: true, 
    speed: 5000, 
-   images: ['/assets/img/screens/counters.png', 
-      '/assets/img/screens/counter-properties.png', 
-	  '/assets/img/screens/services.png', 
-      '/assets/img/screens/service-properties.png', 
-	  '/assets/img/screens/bills.png',
-	  '/assets/img/screens/bill-properties.png',
-	  '/assets/img/screens/bill-details.png',
-	  '/assets/img/screens/main-screen.png',
-	  '/assets/img/screens/main-screen-houses.png',
-	  '/assets/img/screens/houses.png',
-	  '/assets/img/screens/house-properties.png'
+   images: [
+      '{{ "/assets/img/screens/counters.png" | absolute_url }}', 
+      '{{ "/assets/img/screens/counter-properties.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/services.png" | absolute_url }}', 
+      '{{ "/assets/img/screens/service-properties.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/bills.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/bill-properties.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/bill-details.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/main-screen.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/main-screen-houses.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/houses.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/house-properties.png" | absolute_url }}'
       ] 
  	}); 
    
