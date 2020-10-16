@@ -20,8 +20,8 @@
 
 repository: AlexanderKrutov/domometer.ru
 title: DomoMeter
-baseurl: "" 
-url: "" 
+baseurl: "/domometer.ru" 
+url: "alexanderkrutov.github.io" 
 price: 99
 
 # Build settings
