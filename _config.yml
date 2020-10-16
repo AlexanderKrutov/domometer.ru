@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-repository: AlexanderKrutov/domometer.github.io
+repository: AlexanderKrutov/domometer.ru
 title: DomoMeter
 baseurl: "" 
 url: "" 
