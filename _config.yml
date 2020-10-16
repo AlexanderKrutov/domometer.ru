@@ -36,3 +36,8 @@ price: 99
 #
 exclude:
   - run.bat
+  - Gemfile
+  - Gemfile.lock
+  
+plugins:
+  - jekyll-redirect-from

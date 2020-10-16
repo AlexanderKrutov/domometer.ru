@@ -15,7 +15,7 @@ video: tariff
 
 <script type="text/javascript">
 	var screenshots = [
-	  '{{ "/assets/img/screens/tariff-amount.png" || absolute_url }}', 
+	  '{{ "/assets/img/screens/tariff-amount.png" | absolute_url }}', 
 	  '{{ "/assets/img/screens/tariff-history.png" | absolute_url }}', 
 	  '{{ "/assets/img/screens/tariff-properties.png" | absolute_url }}', 
 	  '{{ "/assets/img/screens/tariffs-list.png" | absolute_url }}'
