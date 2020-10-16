@@ -35,5 +35,5 @@ topic: faq
 
 <hr>
 
-Если у вас есть другие вопросы по использованию программы, вы можете задать их на <a href="/forum" target="_blank">форуме <sup title="Ссылка откроется в новом окне"><i class="fa fa-external-link-square"></i></sup></a>
+Если у вас есть другие вопросы по использованию программы, вы можете задать их на <a href="{{ '/forum' | absolute_url }}" target="_blank">форуме <sup title="Ссылка откроется в новом окне"><i class="fa fa-external-link-square"></i></sup></a>
 

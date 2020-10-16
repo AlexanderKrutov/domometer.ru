@@ -7,17 +7,17 @@ video: bills
 
 <div class="row">
 <ol class="breadcrumb pull-right">
-  <li><a href="/">DomoMeter</a></li>
-  <li><a href="/help">Справка</a></li>
+  <li><a href="{{ '/' | absolute_url }}">DomoMeter</a></li>
+  <li><a href="{{ '/help' | absolute_url }}">Справка</a></li>
   <li class="active">Счета</li>
 </ol>
 </div>
 
 <script type="text/javascript">
 	var screenshots = [
-	  '/assets/img/screens/bills.png', 
-	  '/assets/img/screens/bill-properties.png',
-	  '/assets/img/screens/bill-details.png'
+	  '{{ "/assets/img/screens/bills.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/bill-properties.png" | absolute_url }}',
+	  '{{ "/assets/img/screens/bill-details.png" | absolute_url }}'
 	];
 </script>
 {% include_relative _screenshot.md %}

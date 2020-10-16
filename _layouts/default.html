@@ -12,7 +12,7 @@
 	<meta name="description" content="{{page.description}}" />
     <meta name="author" content="Alexander Krutov">
 
-	<meta property="og:image" content="/assets/img/favicons/og-image.png" /> 
+	<meta property="og:image" content="{{ '/assets/img/favicons/og-image.png' | absolute_url }}" /> 
 	
 	<meta name="theme-color" content="#016995">
 	<meta name="msapplication-navbutton-color" content="#016995">
@@ -20,28 +20,28 @@
 		
 	<title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
 		
-	<link rel="icon" sizes="192x192" href="/assets/img/favicons/favicon_192x192.png">
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/img/favicons/favicon_180x180.png">
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/favicons/favicon_152x152.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicons/favicon_144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/favicons/favicon_120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/favicon_114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/favicons/favicon_76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/favicon_72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/favicons/favicon_57x57.png" />
-	<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="192x192" href="{{ '/assets/img/favicons/favicon_192x192.png' | absolute_url }}">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ '/assets/img/favicons/favicon_180x180.png' | absolute_url }}">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ '/assets/img/favicons/favicon_152x152.png' | absolute_url }}" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/assets/img/favicons/favicon_144x144.png' | absolute_url }}" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ '/assets/img/favicons/favicon_120x120.png' | absolute_url }}" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ '/assets/img/favicons/favicon_114x114.png' | absolute_url }}" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ '/assets/img/favicons/favicon_76x76.png' | absolute_url }}" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ '/assets/img/favicons/favicon_72x72.png' | absolute_url }}" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ '/assets/img/favicons/favicon_57x57.png' | absolute_url }}" />
+	<link rel="shortcut icon" href="{{ '/assets/img/favicons/favicon.ico' | absolute_url }}" type="image/x-icon">
+	<link rel="icon" href="{{ '/assets/img/favicons/favicon.ico' | absolute_url }}" type="image/x-icon">
 	
-	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="{{ '/assets/vendor/bootstrap/css/bootstrap.min.css' | absolute_url }}" rel="stylesheet">	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="/assets/vendor/device-mockups/device-mockups.css">
-	<link rel="stylesheet" href="/assets/vendor/fadeShow/css/jquery.fadeshow-0.1.2.css">
-	<link rel="stylesheet" href="/assets/vendor/likely/likely.css">
-    <link href="/assets/css/new-age.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/vendor/font-awesome/css/font-awesome.min.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/simple-line-icons/css/simple-line-icons.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendor/device-mockups/device-mockups.css' | absolute_url }}">
+	<link rel="stylesheet" href="{{ '/assets/vendor/fadeShow/css/jquery.fadeshow-0.1.2.css' | absolute_url }}">
+	<link rel="stylesheet" href="{{ '/assets/vendor/likely/likely.css' | absolute_url }}">
+    <link href="{{ '/assets/css/new-age.css' | absolute_url }}" rel="stylesheet">
 
-	<script src="/assets/vendor/jquery/jquery.min.js"></script>
+	<script src="{{ '/assets/vendor/jquery/jquery.min.js' | absolute_url }}"></script>
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,19 +79,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 					<li>
-                        <a class="page-scroll {% if page.topic == "help" %}inactive-link{% endif %}" href="/help">Справка</a>
+                        <a class="page-scroll {% if page.topic == "help" %}inactive-link{% endif %}" href="{{ '/help' | absolute_url }}">Справка</a>
                     </li>
 					<li>
-                        <a class="page-scroll {% if page.topic == "features" %}inactive-link{% endif %}" href="/features">Функции</a>
+                        <a class="page-scroll {% if page.topic == "features" %}inactive-link{% endif %}" href="{{ '/features' | absolute_url }}">Функции</a>
                     </li>
                     <li>
-                        <a class="page-scroll {% if page.topic == "versions" %}inactive-link{% endif %}" href="/versions">Версии</a>
+                        <a class="page-scroll {% if page.topic == "versions" %}inactive-link{% endif %}" href="{{ '/versions' | absolute_url }}">Версии</a>
                     </li>
 					<li>
-                        <a class="page-scroll {% if page.topic == "faq" %}inactive-link{% endif %}" href="/faq">Частые вопросы</a>
+                        <a class="page-scroll {% if page.topic == "faq" %}inactive-link{% endif %}" href="{{ '/faq' | absolute_url }}">Частые вопросы</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="/forum">Форум</a>
+                        <a class="page-scroll" href="{{ '/forum' | absolute_url }}">Форум</a>
                     </li>
                 </ul>
             </div>
@@ -148,27 +148,27 @@
 			
             <ul class="list-inline bottom-menu">		
                 <li>
-                    <a href="/features" class="{% if page.topic == "features" %}inactive-link{% endif %}">Возможности программы</a>
+                    <a href="{{ '/features' | absolute_url }}" class="{% if page.topic == "features" %}inactive-link{% endif %}">Возможности программы</a>
                 </li>
 				<li>
-                    <a href="/versions" class="{% if page.topic == "versions" %}inactive-link{% endif %}">История версий</a>
+                    <a href="{{ '/versions' | absolute_url }}" class="{% if page.topic == "versions" %}inactive-link{% endif %}">История версий</a>
                 </li>
                 <li>
-                    <a href="/faq" class="{% if page.topic == "faq" %}inactive-link{% endif %}">Частые вопросы</a>
+                    <a href="{{ '/faq' | absolute_url }}" class="{% if page.topic == "faq" %}inactive-link{% endif %}">Частые вопросы</a>
                 </li>
                 <li>
-                    <a href="/help" class="{% if page.topic == "help" %}inactive-link{% endif %}">Справка</a>
+                    <a href="{{ '/help' | absolute_url }}" class="{% if page.topic == "help" %}inactive-link{% endif %}">Справка</a>
                 </li>
 				<li>
-                    <a href="/forum">Форум</a>
+                    <a href="{{ '/forum' | absolute_url }}">Форум</a>
                 </li>
 				<li>
-                    <a href="/privacy" class="{% if page.topic == "privacy" %}inactive-link{% endif %}">Политика конфиденциальности</a>
+                    <a href="{{ '/privacy' | absolute_url }}" class="{% if page.topic == "privacy" %}inactive-link{% endif %}">Политика конфиденциальности</a>
                 </li>
             </ul>
 
 			<div class="likely likely-light likely-small" 
-				data-url="http://domometer.ru" 
+				data-url="{{ '/' | absolute_url }}" 
 				data-title="DomoMeter — удобное Android приложение для учёта коммунальных платежей" >
 			  <div class="twitter" data-via="domometer_ru" ></div>
 			  <div class="facebook"></div>
@@ -176,7 +176,7 @@
 			  <div class="vkontakte"></div>
 			  <div class="telegram"></div>
 			  <div class="odnoklassniki"></div>
-			  <div class="pinterest" data-media="/assets/img/favicons/og-image.png"></div>
+			  <div class="pinterest" data-media="{{ '/assets/img/favicons/og-image.png' | absolute_url }}"></div>
 			</div>		
             
 			<div class="contacts">
@@ -188,11 +188,11 @@
         </div>
     </footer>
 
-    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/vendor/easing/jquery.easing.min.js"></script>
-	<script src="/assets/vendor/fadeShow/js/jquery.fadeshow-0.1.2.js"></script>
-	<script src="/assets/vendor/likely/likely.js"></script>
-    <script src="/assets/js/new-age.js"></script>
+    <script src="{{ '/assets/vendor/bootstrap/js/bootstrap.min.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/vendor/easing/jquery.easing.min.js' | absolute_url }}"></script>
+	<script src="{{ '/assets/vendor/fadeShow/js/jquery.fadeshow-0.1.2.js' | absolute_url }}"></script>
+	<script src="{{ '/assets/vendor/likely/likely.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/js/new-age.js' | absolute_url }}"></script>
 
 </body>
 

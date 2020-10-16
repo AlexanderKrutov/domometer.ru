@@ -7,16 +7,16 @@ video: counters
  
 <div class="row"> 
 <ol class="breadcrumb pull-right"> 
-  <li><a href="/">DomoMeter</a></li> 
-  <li><a href="/help">Справка</a></li> 
+  <li><a href="{{ '/' | absolute_url }}">DomoMeter</a></li> 
+  <li><a href="{{ '/help' | absolute_url }}">Справка</a></li> 
   <li class="active">Счётчики</li>
 </ol>
 </div> 
  
 <script type="text/javascript">
 	var screenshots = [
-	  '/assets/img/screens/counters.png', 
-	  '/assets/img/screens/counter-properties.png'
+	  '{{ "/assets/img/screens/counters.png" | absolute_url }}', 
+	  '{{ "/assets/img/screens/counter-properties.png" | absolute_url }}'
 	];
 </script>
 {% include_relative _screenshot.md %} 
