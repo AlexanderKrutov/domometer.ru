@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+	
+	<meta name="yandex-verification" content="7e4242c1a1b27915" />
+	<meta name="google-site-verification" content="xrE_SaFmaKinTicgCV6rU9fefnNf5_5wvT3BbQ5RIRI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="показания счетчиков, коммунальные платежи, программа финансы, программа, программа для контроля финансов, учет финансов для андроид, Android, коммуналка, счетчики, счетчик газа, счетчик электричества, счетчик воды, счетчик тепла, ЖКХ, ТСЖ, ДУК, учет услуг, финансы, тарифы, электроэнергия, расчет, прием показаний, отправка показаний, СМС, оплатить услуги, расчет за коммунальные услуги, оплатить коммунальные, тарифы жкх, программное обеспечение для жкх, платежи жкх" />
+	<meta name="description" content="{{page.description}}" />
+    <meta name="author" content="Alexander Krutov">
+
+	<meta property="og:image" content="/assets/img/favicons/og-image.png" /> 
+	
+	<meta name="theme-color" content="#016995">
+	<meta name="msapplication-navbutton-color" content="#016995">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#016995">
+		
+	<title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+		
+	<link rel="icon" sizes="192x192" href="/assets/img/favicons/favicon_192x192.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/img/favicons/favicon_180x180.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/favicons/favicon_152x152.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicons/favicon_144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/favicons/favicon_120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/favicon_114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/favicons/favicon_76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/favicon_72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/favicons/favicon_57x57.png" />
+	<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon">
+	
+	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/assets/vendor/device-mockups/device-mockups.css">
+	<link rel="stylesheet" href="/assets/vendor/fadeShow/css/jquery.fadeshow-0.1.2.css">
+	<link rel="stylesheet" href="/assets/vendor/likely/likely.css">
+    <link href="/assets/css/new-age.css" rel="stylesheet">
+
+	<script src="/assets/vendor/jquery/jquery.min.js"></script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2304773-4']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+
+<body id="page-top">
+
+	<div class="page-content">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Навигация</span> <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% if page.is_front_page %}#page-top{% else %}/{% endif %}">DomoMeter</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+					<li>
+                        <a class="page-scroll {% if page.topic == "help" %}inactive-link{% endif %}" href="/help">Справка</a>
+                    </li>
+					<li>
+                        <a class="page-scroll {% if page.topic == "features" %}inactive-link{% endif %}" href="/features">Функции</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll {% if page.topic == "versions" %}inactive-link{% endif %}" href="/versions">Версии</a>
+                    </li>
+					<li>
+                        <a class="page-scroll {% if page.topic == "faq" %}inactive-link{% endif %}" href="/faq">Частые вопросы</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="/forum">Форум</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+	{% if page.is_front_page %}
+	
+	<header class="main-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="header-content">
+						<div class="header-content-inner">
+							<h1>DomoMeter:<br>самый удобный способ вести учёт коммунальных платежей.</h1>
+							<a href="#download" class="btn btn-outline btn-xl page-scroll">Скачать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="device-container">
+						<div class="device-mockup nexus6 portrait black">
+							<div class="device">
+								<div class="screen">
+								</div>
+								<div class="button">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	{% else %}
+	
+	<header class="inner-page"></header>
+	
+	{% endif %}
+	
+	{% if page.is_front_page %}
+		{{ content }}
+	{% else %}	
+		<div class="container">
+			{{ content }}
+		</div>
+	{% endif %}
+	
+	</div>
+	
+    <footer>
+        <div class="container">
+			
+            <ul class="list-inline bottom-menu">		
+                <li>
+                    <a href="/features" class="{% if page.topic == "features" %}inactive-link{% endif %}">Возможности программы</a>
+                </li>
+				<li>
+                    <a href="/versions" class="{% if page.topic == "versions" %}inactive-link{% endif %}">История версий</a>
+                </li>
+                <li>
+                    <a href="/faq" class="{% if page.topic == "faq" %}inactive-link{% endif %}">Частые вопросы</a>
+                </li>
+                <li>
+                    <a href="/help" class="{% if page.topic == "help" %}inactive-link{% endif %}">Справка</a>
+                </li>
+				<li>
+                    <a href="/forum">Форум</a>
+                </li>
+				<li>
+                    <a href="/privacy" class="{% if page.topic == "privacy" %}inactive-link{% endif %}">Политика конфиденциальности</a>
+                </li>
+            </ul>
+
+			<div class="likely likely-light likely-small" 
+				data-url="http://domometer.ru" 
+				data-title="DomoMeter — удобное Android приложение для учёта коммунальных платежей" >
+			  <div class="twitter" data-via="domometer_ru" ></div>
+			  <div class="facebook"></div>
+			  <div class="gplus"></div>
+			  <div class="vkontakte"></div>
+			  <div class="telegram"></div>
+			  <div class="odnoklassniki"></div>
+			  <div class="pinterest" data-media="/assets/img/favicons/og-image.png"></div>
+			</div>		
+            
+			<div class="contacts">
+				<a href="mailto:mail@domometer.ru"><i class="fa fa-envelope"></i> mail@domometer.ru</a>
+            </div>
+			
+			<div class="copy contacts">© <a href="http://akrutov.ru">Alexander Krutov</a>, 2012 — {{ site.time | date: '%Y' }}</div>
+						
+        </div>
+    </footer>
+
+    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/vendor/easing/jquery.easing.min.js"></script>
+	<script src="/assets/vendor/fadeShow/js/jquery.fadeshow-0.1.2.js"></script>
+	<script src="/assets/vendor/likely/likely.js"></script>
+    <script src="/assets/js/new-age.js"></script>
+
+</body>
+
+</html>
